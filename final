@@ -1,2 +1,30 @@
 # String-And-StringBuffer
 behavior of mutability and Immutability
+public class Test{
+
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// we create a stringBuffer object with final key word but
+		// we can able to perform changes 
+		final StringBuffer sb = new StringBuffer("Anjali");
+		System.out.println(sb.append(" shikare"));
+		
+		
+		// in final we cannot reassign a variable to object
+		// if we try compile time error will get(The final local variable sb cannot be assigned)
+		
+//		sb =  new StringBuffer("hardhal");
+//		System.out.print(sb);
+		
+		
+		
+		// if we try append() for String the we will get compile time error
+		// (method append(String) is undefined for the type String)
+		
+//		String name = new String("pune");
+//		System.out.println(name.append("Maharshtra"));
+		
+		// this is  deference between final and Immutability
+		
+}
