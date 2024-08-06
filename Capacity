@@ -1,0 +1,29 @@
+public class Test {
+	public static void main(String[] aargs) {
+		
+		// initial capacity of StringBuffer = 16
+		// its increase by = current capacity+1*2
+		
+		System.out.println("*****_Default capcity______*****");
+		StringBuffer sb = new StringBuffer();
+		System.out.println(sb.capacity());
+		
+		
+		System.out.println("****__additional intial capacity__**");
+		StringBuffer sb1 = new StringBuffer();
+		sb1.append("abcdefghijkalmnop");
+		System.out.println(sb1.capacity());
+		
+		System.out.println("**___create with specifide intial capacity __***");
+		StringBuffer ss = new StringBuffer(100);
+		System.out.println(ss.capacity());
+		
+		System.out.println("***__capacity =s.lenghth()+16__***");
+		StringBuffer bufs = new StringBuffer("Anjali");
+		System.out.println(bufs+" + 16");
+		System.out.println(bufs.capacity());
+		
+
+	}
+
+}
